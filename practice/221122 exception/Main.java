@@ -18,16 +18,22 @@ public class Main {
 			} catch (InputMismatchException inputMismatchException) {
 				System.err.println("Input should be a number. Enter again.");
 				sc.nextLine();
-			} catch (ArithmeticException arithmeticException) {
+			} catch (IllegalArgumentException illegalArgumentException) {
+				System.err.printf("%s",illegalArgumentException.getMessage());
+			}catch (ArithmeticException arithmeticException) {
 				System.err.println("Cannot divide by zero. Enter again");
 			} finally {
 				System.out.println("finally executed");
 			}
 		} while (continueLoop);
-
+		
+		sc.close();
 	}
 
-	public static int divide(int a, int b) throws ArithmeticException {
-		return a / b;
+	public static int divide(int a, int b) throws ArithmeticException, IllegalArgumentException{
+		if (a<0) {
+			throw new IllegalArgumentException("a should >0\n");
+		}
+			return a / b;
 	}
 }
