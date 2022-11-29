@@ -16,6 +16,14 @@ public class Main {
 		//String equal
 		System.out.println(name1.equals(name4)); //false
 		System.out.println(name1.equalsIgnoreCase(name4)); //true
+		//String split
+		String name5="2005/05/03";
+		String[] splits=name5.split("/");
+		for (String split : splits) {
+			System.out.printf("%s ", split);
+		}
+		
+		
 	}
 
 }
