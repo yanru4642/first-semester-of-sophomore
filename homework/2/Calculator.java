@@ -16,15 +16,15 @@ public class Calculator {
 		
 		frm.setLayout(null);
 		frm.setLocation(400,300); //window位置
-		frm.setSize(400,300); //window大小
+		frm.setSize(450,300); //window大小
 		frm.setBackground(new Color(190, 233, 232)); //window背景
 		//number label
-		num_lab.setBounds(5, 50, 250, 40);
+		num_lab.setBounds(5, 40, 250, 40);
 		num_lab.setBackground(new Color(98, 182, 203));
 		num_lab.setFont(new Font("Arial", Font.PLAIN,18));
 		num_lab.setForeground(Color.WHITE);
 		//text label
-		txt_lab.setBounds(270, 50, 120, 40);
+		txt_lab.setBounds(275, 40, 120, 40);
 		txt_lab.setFont(new Font("Arial", Font.ITALIC+Font.BOLD, 16));
 		txt_lab.setForeground(new Color(57, 91, 80));
 		//number panel
@@ -46,7 +46,7 @@ public class Calculator {
 		op1_pnl.setFont(f);
 		op1_pnl.setForeground(new Color(43, 111, 232));
 		//operator2 panel
-		op2_pnl.setBounds(270, 100, 120, 160);
+		op2_pnl.setBounds(275, 100, 120, 160);
 		op2_pnl.add(new Button("="));
 		op2_pnl.add(new Button("Clear"));
 		op2_pnl.setFont(new Font("Arial", Font.BOLD, 20));
