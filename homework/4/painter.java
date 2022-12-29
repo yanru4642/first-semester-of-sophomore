@@ -51,7 +51,7 @@ public class painter extends Frame{
 		//status label
 		statusLabel.setBounds(10,50,80,30);
 		statusLabel.setBackground(Color.lightGray);
-		statusLabel.setFont(new Font("Arial" , Font.PLAIN, 12));
+		statusLabel.setFont(new Font("Arial", Font.PLAIN, 12));
 		//points initialization
 		start=new Point(0,0);
 		distance=new Point(0,0);
